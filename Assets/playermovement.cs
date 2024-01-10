@@ -8,6 +8,8 @@ public class playermovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    Vector2 movement;
+
     void Start()
     {
         
@@ -16,6 +18,14 @@ public class playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * movespeed * Time.fixedDeltaTime);
     }
 }

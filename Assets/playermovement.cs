@@ -28,17 +28,15 @@ public class playermovement : MonoBehaviour
     {
 
         x = Input.GetAxisRaw("Horizontal");
-       y = Input.GetAxisRaw("Vertical");
-
+        y = Input.GetAxisRaw("Vertical");
+        //var input = new Vector2(x, y).normalized; for nerds or losers xd
+        
         if (x != 0 || y != 0)
         {
             anim.SetFloat("x", x);
             anim.SetFloat("y", y);
             walk = true;
             anim.SetBool("speed", walk);
-                
-                
-            
         }
         else
         {

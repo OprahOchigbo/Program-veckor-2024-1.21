@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableObject : MonoBehaviour
+public class InteractableObject : CollidableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool z_Interacted = false;
 
-    // Update is called once per frame
-    void Update()
+    protected override void OnCollided(GameObject collidedObject)
     {
+        if (Input.GetKey(KeyCode.E))
+        {
+            OnInteract();
+        }
+    }
+    protected virtual void OnInteract()
+    {
+        if (!z_Interacted)
+        {
+            z_Interacted = true;
+            Debug.Log("Interact with " + name);
+        }
         
     }
 }

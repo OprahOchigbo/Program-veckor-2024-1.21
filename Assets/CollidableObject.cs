@@ -9,18 +9,21 @@ public class CollidableObject : MonoBehaviour
     private ContactFilter2D z_Filter;
     private List<Collider2D> CollidedObject1 = new List<Collider2D>(1);
     
-    private void Start()
+    protected virtual void Start()
     {
       z_Collider = GetComponent<Collider2D>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         z_Collider.OverlapCollider(z_Filter, CollidedObject1);
         foreach (var o in CollidedObject1)
         {
-            Debug.Log("Collided with" + o.name);
+            OnCollided(o.gameObject);
         }
     }
-    
+    protected virtual void OnCollided(GameObject collidedObject)
+    {
+        Debug.Log("Collided with " + collidedObject.name);
+    }
 }

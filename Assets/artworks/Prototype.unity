@@ -343,39 +343,13 @@ PrefabInstance:
       addedObject: {fileID: 70223240}
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 27800836e1b8d834ebf921aec7335e58, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 70223239}
+      addedObject: {fileID: 70223244}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 27800836e1b8d834ebf921aec7335e58, type: 3}
 --- !u!1 &70223238 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 27800836e1b8d834ebf921aec7335e58, type: 3}
   m_PrefabInstance: {fileID: 70223237}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &70223239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70223238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d169499b45d6484995aa4b105feee8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  z_Filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!61 &70223240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -421,6 +395,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72, y: 0.68}
   m_EdgeRadius: 0
+--- !u!114 &70223244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70223238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd25d93b2359b98469a0feadde671a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  z_Filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1001 &121426599
 PrefabInstance:
   m_ObjectHideFlags: 0

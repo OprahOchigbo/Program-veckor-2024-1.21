@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/CollidableObject.cs.meta
+guid: 476345309ab17f84e94305f55cfc89b2
+========
+guid: 17ddcd2d6ddcebe49a5ab1582814abae
+>>>>>>>> 1496e32f63c7620e9b0511cbe406046442ab684f:Assets/triggerRoom.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

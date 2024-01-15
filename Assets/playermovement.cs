@@ -1,31 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class playermovement : MonoBehaviour
 {
     public float movespeed = 5f;
 
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
-    Vector2 movement;
+    public Animator anim;
 
-    void Start()
+    public float x, y;
+    private bool walk;
+
+    private Vector2 dir;
+
+    private void Start()
     {
-        
+
+        rb = GetComponent<Rigidbody2D>();
+
     }
 
-    // Update is called once per frame
+ 
     void Update()
     {
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+        //var input = new Vector2(x, y).normalized; for nerds or losers xd
+        
+        if (x != 0 || y != 0)
+        {
+            anim.SetFloat("x", x);
+            anim.SetFloat("y", y);
+            walk = true;
+            anim.SetBool("speed", walk);
+        }
+        else
+        {
+            if (walk)
+            {
+                walk = false;
+                anim.SetBool("speed", walk);
+                StopMoving();
+            }
+        }
 
+        dir = new Vector2(x, y).normalized;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * movespeed * Time.fixedDeltaTime);
+        rb.velocity = dir * movespeed * Time.deltaTime;
     }
+    private void StopMoving()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+
 }

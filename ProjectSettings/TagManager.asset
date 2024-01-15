@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 2445672837
+    locked: 0
+  - name: non interactive
+    uniqueID: 2863096299
+    locked: 0
+  - name: Interactables
+    uniqueID: 2174809963
+    locked: 0
+  - name: Decoravtives
+    uniqueID: 4149603863
+    locked: 0
+  - name: Character
+    uniqueID: 2846912065
+    locked: 0

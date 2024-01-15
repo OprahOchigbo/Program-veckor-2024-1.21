@@ -15,7 +15,15 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT GAME");
         Application.Quit();
     }
+    private void Update()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene(2);
+        }
+      //  SceneManager.LoadScene()
+    }
 
     
-
-    }
+}

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu.unity
     guid: ac31c61449f724d4692097f8a536a011
+  - enabled: 1
+    path: Assets/Prototype/NEW PROTOTYPE.unity
+    guid: 84bbe3fd3c638114ba28aa54d75ded40
   m_configObjects: {}

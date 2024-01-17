@@ -198,7 +198,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 17.65625, y: 12.4375, z: 0}
+  m_ChunkCullingBounds: {x: 17.5625, y: 12.4375, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -242,9 +242,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7158bd2e7432a944f887ca4a83de2f8c, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: -1436496565, guid: ce930c0c95b5c5146b752bdf243a3fc3, type: 3}
+    m_Data: {fileID: -375312080, guid: 3e8897c56b1640641938e0816b428c65, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1674187936, guid: ce930c0c95b5c5146b752bdf243a3fc3, type: 3}
+    m_Data: {fileID: 439529889, guid: 3e8897c56b1640641938e0816b428c65, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2
     m_Data:
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 498340321}
   - component: {fileID: 498340320}
   m_Layer: 6
-  m_Name: Square (1)
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1042,8 +1042,8 @@ Transform:
   m_GameObject: {fileID: 498340319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: -11.29, z: 0}
-  m_LocalScale: {x: 1, y: 0.9875, z: 1}
+  m_LocalPosition: {x: 1.37, y: -10.58, z: 0}
+  m_LocalScale: {x: 1.5, y: 2.3700001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3062,7 +3062,7 @@ GameObject:
   - component: {fileID: 1746341963}
   - component: {fileID: 1746341962}
   m_Layer: 6
-  m_Name: Square
+  m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

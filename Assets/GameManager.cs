@@ -4,4 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-}
+    [SerializeField] private GameObject _startingSceneTransition;
+    [SerializeField] private GameObject _endingSceneTransition;
+
+
+
+    }

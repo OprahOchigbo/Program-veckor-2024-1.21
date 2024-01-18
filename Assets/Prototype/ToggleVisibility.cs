@@ -7,7 +7,7 @@ public class ToggleVisibility : MonoBehaviour
 
     public GameObject blacksquare;
 
-    private bool isRoomEntered = false;
+    public bool isRoomEntered = false;
 
 
     void Update()
@@ -38,6 +38,7 @@ public class ToggleVisibility : MonoBehaviour
     {
         if (blacksquare != null)
         {
+            Debug.Log("toggle box");
             blacksquare.SetActive(!blacksquare.activeSelf);
         }
     }

@@ -6,5 +6,5 @@ public class Interactable : MonoBehaviour
 {
     public string InteractionPrompt { get; }
 
-    public void Interact (Interactor)
+    //public void Interact(Interactor)
 }

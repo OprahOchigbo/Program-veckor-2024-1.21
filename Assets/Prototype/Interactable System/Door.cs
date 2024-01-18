@@ -8,7 +8,7 @@ public class Door : MonoBehaviour, IInteractable
 
     public string InteractionPrompt => _prompt;
 
-    public bool Interact(Interactor Interactor)
+    public bool Interact(Interactor interactor)
     {
         Debug.Log(message: "Opening door!");
         return true;

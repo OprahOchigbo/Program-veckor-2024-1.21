@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Interactor : MonoBehaviour
 {
@@ -16,6 +17,20 @@ public class Interactor : MonoBehaviour
     private void Update()
     {
         _numFound = Physics2D.OverlapCircleNonAlloc(_interactionPoint.position, _interactionPointRadius, _collider, _interactableMask);
+
+
+        if (_numFound > 0)
+        {
+            if (_collider[0] != null)
+            {
+                var interactable = _collider[0].GetComponent<IInteractable>();
+                if (interactable != null && Keyboard.current.eKey.wasPressedThisFrame)
+                {
+                    interactable.Interact(this);
+                }
+            }
+        }
+
     }
 
 

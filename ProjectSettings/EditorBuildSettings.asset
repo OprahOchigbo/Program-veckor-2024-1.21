@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Test scene 1.unity
     guid: aee113c5c525cb64abf095095f0aa731
   - enabled: 1
-    path: Assets/Prototype/Disclamer.unity
+    path: Assets/Prototype/Disclaimer.unity
     guid: 445cee2affdcd834caf9a047a16c3cdf
   - enabled: 1
     path: Assets/Prototype/MainMenu.unity

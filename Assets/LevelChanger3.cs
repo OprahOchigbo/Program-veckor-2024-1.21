@@ -17,6 +17,8 @@ public class LevelChanger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             SceneManager.LoadScene(3);
+
+            
         }
 
         //Debug.Log("Loading scene 3");

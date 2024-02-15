@@ -12,7 +12,7 @@ public class random: MonoBehaviour
     }
 
     // Update is called once per frame
-    void StartRandomDialogue()
+   public void StartRandomDialogue()
     {
         if(dialogueLines.Length > 0)
         {

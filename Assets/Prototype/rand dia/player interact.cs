@@ -15,7 +15,7 @@ public class playerinteract : MonoBehaviour
         }
     }
 
-    void StartRandomNPCDialogue()
+    public void StartRandomNPCDialogue()
     {
         if (dialogueManager != null)
         {
